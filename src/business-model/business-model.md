@@ -52,4 +52,4 @@ We are aware of the potential risks posed by such a program - lack of defined ro
 
 To further cement Blank as a go-to privacy transaction partner, we will explore unconventional ways to grow our user base. Blank’s Reward System will include a mixture of incentive programs, crypto airdrops, and giveaways for those inviting users. 
 
-As discussed, we put user growth near the top of our priority list as it directly improves the functionality and privacy using smart contracts. Thus, to maximize the incentives to refer others to join Blank, existing wallet users will be rewarded from the sign-up of their referred new users. However, since we see failures and exploits when executing referral campaigns, we will look at how to execute these sign-up programs in a foolproof way to not be taken advantage of in the process. 
+As discussed, we put user growth near the top of our priority list as it directly improves the functionality and privacy using smart contracts. Thus, to maximize the incentives to refer others to join Blank, existing wallet users will be rewarded from the sign-up of their referred new users. 

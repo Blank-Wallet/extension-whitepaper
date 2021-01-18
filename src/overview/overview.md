@@ -26,9 +26,9 @@ Blank uses smart contracts that allow users to hide the amounts and origins of c
 
 Each time you want to make a withdrawal, Blank will create a new wallet address for you with the amount of crypto that you requested, which originates from the smart contract where everyone’s funds are pooled.
 
-<!--- Blank Wallet Preview --->
+## Blank Wallet Preview
 
-This is a preview of how the Blank wallet looks. While some of the buttons on this mockup bring you to new screens, this is just a showcase with very limited functionality.
+Below is a preview of how the Blank wallet looks. While some of the buttons on this mockup bring you to new screens, this is just a showcase with very limited functionality.
 
 <style>
     .lds-dual-ring {

@@ -12,7 +12,7 @@
 - Automatic deposits → funds deposited into any personal Blank Wallet address will automatically be sent into the main Blank pool.
 - One time address → each time withdrawing from the main Blank pool would automatically create a new address to withdraw into.
 - Proof-of-funds compliance key → choose who you provide your transparency to. Providing a compliance key of specific withdrawn addresses would reveal the origins of the deposit.
--Web 3 compatibility → connect to all DeFi applications.
+- Web 3 compatibility → connect to all DeFi applications.
 
 ### Q3 2021
 - Blank functionality integration to Metamask snaps PlugIn → while still in Alpha, a full release would allow existing MetaMask users to install additional plugins, such as Blank plugin, to get additional features on their existing MetaMask wallet.

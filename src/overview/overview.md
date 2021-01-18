@@ -1,4 +1,4 @@
-# Overview
+# 1.1. Overview
 
 In 2020 we had a chance to experience a true paradigm shift. In line with the ever-increasing demand for privacy and anonymity, a new subset of the crypto ecosystem emerged. While the theoretical concept of avoiding centralised parties has been around since the inception of Bitcoin, the Decentralised Finance (DeFi) market bloom in 2020 demonstrated the true potential of putting such ambitious ideas into action. 
 
@@ -18,7 +18,7 @@ With today’s existing solutions, users must either experience friction or deal
 
 **Blank wallet fights both friction and centralisation.** <br/>  Blank believes everyone should have rights to their privacy. Privacy shouldn’t be “opt-in”, rather it’s something you could occasionally “opt-out” on your free will.
 
-## What is Blank?
+## 1.2. What is Blank?
 
 Blank is the most private, non-custodial Ethereum browser wallet.
 
@@ -26,7 +26,7 @@ Blank uses smart contracts that allow users to hide the amounts and origins of c
 
 Each time you want to make a withdrawal, Blank will create a new wallet address for you with the amount of crypto that you requested, which originates from the smart contract where everyone’s funds are pooled.
 
-## Blank Wallet Preview
+## 1.3. Blank Wallet Preview
 
 Below is a preview of how the Blank wallet looks. While some of the buttons on this mockup bring you to new screens, this is just a showcase with very limited functionality.
 

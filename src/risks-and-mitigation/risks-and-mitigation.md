@@ -1,8 +1,8 @@
-# Risks and Mitigation
+# 6. Risks and Mitigation
 
 As with any product, its success is dependent on many external factors. The team behind Blank wallet believes that by identifying possible upcoming risks, the success chances can be increased. There are several risks that we wanted to address - and how we intend to minimize them in response to varying market circumstances.
 
-## 1. Insufficient Capital pooled to provide Privacy 
+## 6.1. Insufficient Capital pooled to provide Privacy 
 
 The Blank v2 is expected to support ERC-20 deposits. Given that the privacy of Blank wallet highly correlates with the funds deposited and the usage of Blank functionality, it’s important that the initial liquidity is in place to offer basic anonymity for anyone starting to use Blank Wallet.
 
@@ -11,7 +11,7 @@ Mainly, this is where we plan to allocate most of the raised funds. Pooled ETH w
 
 Lastly, the functionality introduced in v3 is planned to include pooling rewards - anyone will be able to create milestones, which upon being reached would reward all participating wallets.
 
-## 2. High Gas fees due to zkSnark applications
+## 6.2. High Gas fees due to zkSnark applications
 
 Industry-wide events such as extreme volatility may cause Ethereum network to experience higher than usual gas fees, thus rendering Blank wallet to be expensive to use. 
 
@@ -25,13 +25,13 @@ Our view remains that growing the core user base is one of the primary objective
 
 While we have outlined these potential plans of attack based on differing market conditions, we will monitor the industry trends going forward to make an educated and justified decision. In making these crucial decisions, we intend to remain flexible. We want to remain mindful of the feedback from both our users and experts. Therefore, Blank’s team will consult with the community and report our decisions through blogs and social media channels. 
 
-## 3. Market Volatility for Assets raised
+## 6.3. Market Volatility for Assets raised
 
 There were several projects that raised capital in 2017 and ended up facing roadmap execution issues. Namely, this occurred because the management continued to hold funds raised in the native form (ETH), which lost more than 90% of its value over the course of a year. 
 
 Although Blank Wallet aims to continue the same path and raise funds in ETH, there are strict measures we will take to combat problems of the past. Specifically, GoBlank OU will convert enough ETH to cover for 6 months of development costs. After that, the company will continue to liquidate ETH to ensure enough capital is available at any point in time to continue developing for 6 months. As a result, we aim to minimize stoppages and disturbances to our development and the overall project.
 
-## 4. Threats to frequent DeFi hacks
+## 6.4. Threats to frequent DeFi hacks
 
 As outlined in the previous sections, we will deploy a major share of pooled funds in smart contracts to provide liquidity on the platform. Therefore, the prevention against DeFi hacks is equally relevant to Blank’s team (and investors) as it is to our users. 
 

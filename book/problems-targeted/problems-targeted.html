@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Problems Targeted - Blank Whitepaper</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="../overview/overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="../problems-targeted/problems-targeted.html" class="active"><strong aria-hidden="true">2.</strong> Problems Targeted</a></li><li class="chapter-item expanded "><a href="../technical-summary/technical-summary.html"><strong aria-hidden="true">3.</strong> Technical Summary</a></li><li class="chapter-item expanded "><a href="../business-model/business-model.html"><strong aria-hidden="true">4.</strong> Business Model</a></li><li class="chapter-item expanded "><a href="../market-overview/market-overview.html"><strong aria-hidden="true">5.</strong> Market Overview</a></li><li class="chapter-item expanded "><a href="../risks-and-mitigation/risks-and-mitigation.html"><strong aria-hidden="true">6.</strong> Risks and Mitigation</a></li><li class="chapter-item expanded "><a href="../blnk-token/blnk-token.html"><strong aria-hidden="true">7.</strong> BLNK Token</a></li><li class="chapter-item expanded "><a href="../disclaimer/disclaimer.html"><strong aria-hidden="true">8.</strong> Disclaimer</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Blank Whitepaper</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#problems-targeted" id="problems-targeted">Problems targeted</a></h1>
+<p>Unlike Bitcoin’s UTXO structure which offers greater privacy, Ethereum is built using an account-based model where a single address acts like a wallet and can make use of ETH or ERC-20 tokens without the need to transfer unspent balances. Although the practice of using a new address for each new transaction helps to reduce the data left behind, it’s impossible to hide all the information without relying on other services.</p>
+<p>There are a few noteworthy problems on Ethereum:</p>
+<h2><a class="header" href="#hiding-your-wealth" id="hiding-your-wealth">Hiding Your Wealth</a></h2>
+<p>Holding wealth on centralised exchanges is never safe. Any literate investor would advise holding funds in a private wallet instead. By holding cryptocurrency in a private wallet, the user is still vulnerable to have himself or his wealth identified, if previous transactions were <a href="https://www.coindesk.com/coinbase-analytics-blockchain-analysis-crypto-government">analyzed</a>. Everyday transactions, such as sending payments to friends, become an excruciating task, as extreme effort is needed to preserve the privacy of wealth stored on chain. </p>
+<p>Amongst the safest approaches is grouping wealth with other individuals, making it impossible to distinguish capital ownership. Ethereum’s smart contracts enable the possibility of grouping wealth in a trustless manner. Blank’s approach to this can be found in section 3.2.</p>
+<h2><a class="header" href="#hiding-origins-of-your-wealth" id="hiding-origins-of-your-wealth">Hiding Origins of Your Wealth</a></h2>
+<p>Ethereum’s ecosystem provides many financial opportunities: gambling, selling personal NFTs, speculating with controversial tokens and many more. After conducting these operations, in some instances, the user may not want to disclose how he accrued his wealth if it's irrelevant. </p>
+<p>Blank believes that unconnected parties shouldn’t know more about you than necessary. </p>
+<h2><a class="header" href="#less-transparent-trading-activity-eth-erc-20" id="less-transparent-trading-activity-eth-erc-20">Less Transparent Trading Activity (ETH, ERC-20)</a></h2>
+<p>On August 8th 2020, many prominent figures on Twitter <a href="https://twitter.com/HsakaTrades/status/1292175410550038529">shared an address</a> identified as “Zeus Capital”, with an onchain short position on Chainlink. In the following hours, there were many follow up tweets inviting traders to “go long on $link and do a short squeeze”, which resulted in a $17M short liquidation for the identified trader. </p>
+<p>Despite the fact that the method used to identify the wallet is unclear, the use of multiple wallets and blurring the origins of funds could have made the identification a much more demanding task.</p>
+<p>Similarly, on October 18th 2020, a known VC company PolyChain <a href="https://twitter.com/dcarmitage/status/1325942216108470272">has been identified</a> as a large buyer of YFI tokens. Despite the fact that this identification has resulted in a positive outcome for Polychain, causing an influx of new buyers, we have yet to see a possible negative outcome of this identification - once the VC company decides to exit their positions, it’s likely markets would experience fear, uncertainty and doubt, provoking large negative price action.</p>
+<p>Currently, there are no existing solutions that would allow to hide ERC-20 assets in a decentralized way, with more convenient methods to hide trading activity (that is, frictionlessly create new wallet for each new transfer and so on).</p>
+<p>Blank aims to introduce ERC-20 pooling via smart contracts, allowing traders to become less visible. </p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../overview/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../technical-summary/technical-summary.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../overview/overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../technical-summary/technical-summary.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

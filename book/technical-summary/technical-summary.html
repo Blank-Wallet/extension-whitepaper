@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Technical Summary - Blank Whitepaper</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="../overview/overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="../problems-targeted/problems-targeted.html"><strong aria-hidden="true">2.</strong> Problems Targeted</a></li><li class="chapter-item expanded "><a href="../technical-summary/technical-summary.html" class="active"><strong aria-hidden="true">3.</strong> Technical Summary</a></li><li class="chapter-item expanded "><a href="../business-model/business-model.html"><strong aria-hidden="true">4.</strong> Business Model</a></li><li class="chapter-item expanded "><a href="../market-overview/market-overview.html"><strong aria-hidden="true">5.</strong> Market Overview</a></li><li class="chapter-item expanded "><a href="../risks-and-mitigation/risks-and-mitigation.html"><strong aria-hidden="true">6.</strong> Risks and Mitigation</a></li><li class="chapter-item expanded "><a href="../blnk-token/blnk-token.html"><strong aria-hidden="true">7.</strong> BLNK Token</a></li><li class="chapter-item expanded "><a href="../disclaimer/disclaimer.html"><strong aria-hidden="true">8.</strong> Disclaimer</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Blank Whitepaper</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#technical-summary" id="technical-summary">Technical Summary</a></h1>
+<h2><a class="header" href="#roadmap" id="roadmap">Roadmap</a></h2>
+<h3><a class="header" href="#q1-2021---blank-v1" id="q1-2021---blank-v1">Q1 2021 - Blank V1</a></h3>
+<ul>
+<li>Web extension wallet with Tornado.Cash relayer → using existing Tornado.Cash infrastructure (0.1; 1; 10 and 100 ETH smart contracts with already pooled ETH) to deliver basic privacy functionality within a wallet.</li>
+<li>Referral system → Tracking deposits of referred users and rewarding the referrer in BLNK tokens.</li>
+<li>Public Security Audit → security measures before the release of V1 to ensure safety of funds held on Blank Wallet.</li>
+</ul>
+<h3><a class="header" href="#q2-2021---blank-v2" id="q2-2021---blank-v2">Q2 2021 - Blank V2</a></h3>
+<ul>
+<li>ERC-20 Support → allowing any ERC-20 token deposits; promoting WBTC pool</li>
+<li>Automatic deposits → funds deposited into any personal Blank Wallet address will automatically be sent into the main Blank pool.</li>
+<li>One time address → each time withdrawing from the main Blank pool would automatically create a new address to withdraw into.</li>
+<li>Proof-of-funds compliance key → choose who you provide your transparency to. Providing a compliance key of specific withdrawn addresses would reveal the origins of the deposit.
+-Web 3 compatibility → connect to all DeFi applications.</li>
+</ul>
+<h3><a class="header" href="#q3-2021" id="q3-2021">Q3 2021</a></h3>
+<ul>
+<li>Blank functionality integration to Metamask snaps PlugIn → while still in Alpha, a full release would allow existing MetaMask users to install additional plugins, such as Blank plugin, to get additional features on their existing MetaMask wallet.</li>
+<li>Tor integration → The relayers, dApp sites or node providers could theoretically track users by the IP address the requests for deposit or withdrawal are coming from and thus connect depositing and withdrawing addresses. To mitigate this, Tor can be used, so the user’s IP cannot be tracked and changes with each action.</li>
+</ul>
+<h3><a class="header" href="#q4-2021---blank-v3" id="q4-2021---blank-v3">Q4 2021 - Blank V3</a></h3>
+<ul>
+<li>Partial withdrawal → independent ETH pools, no longer based as Tornado.Cash relayers, instead of withdrawing the same amount deposited. </li>
+<li>Unique pool reward system → anyone can create reward milestones for pooling funds and providing privacy for others.</li>
+</ul>
+<h2><a class="header" href="#how-does-it-work" id="how-does-it-work">How does it Work?</a></h2>
+<p>The Blank Wallet V1 functionality is based on Tornado Cash <a href="https://tornado-cash.medium.com/introducing-private-transactions-on-ethereum-now-42ee915babe0">private transactions</a>.</p>
+<p>The tornado mixer at <a href="https://tornado.cash/">tornado.cash</a> is a tool that allows any address to send or mix their Ether or Ethereum tokens in a non-custodial way solely based on strong cryptography.</p>
+<p>It uses smart contracts, where the Ether or Tokens can be deposited and then be withdrawn to a different address. There is no way to link the withdrawal to the deposit, ensuring complete privacy. This is accomplished by using <strong>zkSnarks proofs</strong>. </p>
+<p>To make a <strong>deposit</strong>, the user generates a secret and sends the <a href="https://iden3-docs.readthedocs.io/en/latest/iden3_repos/research/publications/zkproof-standards-workshop-2/pedersen-hash/pedersen.html#pedersen-hash"><strong>Pedersen Hash</strong></a> of a nullifier and the secret, along with the funds to mix, to the smart contract. This is called a commitment and is accepted by the contract, along with the funds.</p>
+<p>A hash function is a <strong>one-way function</strong>, which means that the hash of a secret can be easily calculated, while it is near-impossible to calculate the secret from a given hash. This property is used to guarantee that only a user in possession of the secret to a given commitment can withdraw funds from the contract.</p>
+<p>In order to make a <strong>withdrawal</strong>, the user needs to provide proof that they possess a secret to an unspent commitment in the smart contract. <a href="https://consensys.net/blog/blockchain-development/introduction-to-zk-snarks/"><strong>zkSnark technology</strong></a> allows to do that, without revealing which deposit corresponds to the secret. In other words, zkSnarks allow users to prove that they own a deposit in the contract, without revealing the exact deposit they know the secret of. The withdrawing address can not be connected to the depositing address in any way.</p>
+<p>The so-called <strong>Anonymity Set</strong> shows how many deposits still await for a withdrawal. It is a measurement of anonymity, since the bigger the anonymity set is, the bigger is the scope of addresses that could theoretically be the depositing address for a withdrawing address.</p>
+<p>To further increase anonymity and privacy, several measures can be taken. In order to not allow for external viewers to make a connection between depositing addresses and withdrawing addresses, the withdrawal should not be done right after the deposit for example.</p>
+<p>Even though existing providers like tornado.cash offer user-friendly interfaces, the whole process can be very time consuming and too technically advanced for the average crypto user. This results in lower usage, a smaller Anonymity Set and in turn lower privacy. Users have to manage their notes, the creation and management of different addresses, and they have to take care of following best practices to preserve privacy, like when to withdraw and to use a different IP-address for each action.</p>
+<h2><a class="header" href="#how-is-blank-better" id="how-is-blank-better">How is Blank better?</a></h2>
+<p>Blank on the other hand, provides seamless integration with the anonymity pool to create a user-friendly browser extension wallet. Users do not have to write down secret phrases, go through tedious transaction processes or manually create several wallets. The ease of use in the wallet and its privacy features result in more usage, a larger Anonymity Set and, in turn, higher privacy for all users.</p>
+<p>Blockchain users are also susceptible to off-chain tracking. Due to node and dapp providers receiving data from users, they can perform extensive tracking by fingerprinting and profiling the users’ requests. Blank goes one step further to provide the maximum amount of privacy while retaining a frictionless user experience. In order to further protect users from tracking, both on-chain and off-chain, Tor is integrated into Blank. This means that sending transactions to node providers or interacting with Dapps can be done over the Tor network, providing the user with complete anonymity.</p>
+<h2><a class="header" href="#security" id="security">Security</a></h2>
+<p>Without a doubt, security is an important factor when it comes to building advanced cryptocurrency wallet software. Blank is aware of this, and approaches security with a high level of attention. Additionally, we are also aware that security and privacy go hand in hand - one cannot work without the other.</p>
+<p>Using proven and audited technology and best practices is the way to maximize security. The basic infrastructure on Blank is built by integrating already existing solutions and practices that have been proven over time.</p>
+<p>The encrypted seed phrase, along with other sensitive data like addresses, keys and account data, is securely saved in the browser’s local storage. No online app, website or provider can access any of that secured data - the user remains with total control over their wallet. To store and manage accounts, MetaMask’s <a href="https://github.com/MetaMask/KeyringController">Eth-Keyring library</a> used. We leverage audited and proven open source solutions to minimize the possibility of error.</p>
+<p>Along with keys and accounts, Tornado secrets need to be safely stored inside the browser extension’s storage. To keep a minimum surface of attack, all secrets needed for the zkSnarks are derived from the wallet’s seed phrase. This also means that the user only has to save the seed phrase to be able to import all wallet data, including the zkSnark secrets.</p>
+<p>The following graphic shows how hierarchical deterministic (HD) wallets are integrated into Blank and how Tornado secrets can also be derived from the HD wallet structure.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../problems-targeted/problems-targeted.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../business-model/business-model.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../problems-targeted/problems-targeted.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../business-model/business-model.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

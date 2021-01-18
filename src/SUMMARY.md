@@ -1,7 +1,5 @@
 # Summary
 
-[Introduction](./introduction.md)
-
 - [Overview](./overview/overview.md)
 
 - [Problems Targeted](./problems-targeted/problems-targeted.md)

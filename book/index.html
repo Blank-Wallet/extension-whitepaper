@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Overview - Blank Whitepaper</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview/overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="problems-targeted/problems-targeted.html"><strong aria-hidden="true">2.</strong> Problems Targeted</a></li><li class="chapter-item expanded "><a href="technical-summary/technical-summary.html"><strong aria-hidden="true">3.</strong> Technical Summary</a></li><li class="chapter-item expanded "><a href="business-model/business-model.html"><strong aria-hidden="true">4.</strong> Business Model</a></li><li class="chapter-item expanded "><a href="market-overview/market-overview.html"><strong aria-hidden="true">5.</strong> Market Overview</a></li><li class="chapter-item expanded "><a href="risks-and-mitigation/risks-and-mitigation.html"><strong aria-hidden="true">6.</strong> Risks and Mitigation</a></li><li class="chapter-item expanded "><a href="blnk-token/blnk-token.html"><strong aria-hidden="true">7.</strong> BLNK Token</a></li><li class="chapter-item expanded "><a href="disclaimer/disclaimer.html"><strong aria-hidden="true">8.</strong> Disclaimer</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Blank Whitepaper</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#overview" id="overview">Overview</a></h1>
+<p>In 2020 we had a chance to experience a true paradigm shift. In line with the ever-increasing demand for privacy and anonymity, a new subset of the crypto ecosystem emerged. While the theoretical concept of avoiding centralised parties has been around since the inception of Bitcoin, the Decentralised Finance (DeFi) market bloom in 2020 demonstrated the true potential of putting such ambitious ideas into action. </p>
+<p>Not to mention, DeFi structures have been constructed on strong, value-driven foundations: decentralization, immutability, and absence of central, infinitely powerful bodies. The wider user base seems to agree with these calls for change - and the numbers show it. According to DeFi Pulse, the Total Value Locked (USD) in DeFi has been hitting all-time highs almost daily since the Q2 of 2020.</p>
+<p>With that, timely and well-executed DeFi platforms proved to be a force to be reckoned with. For example, Uniswap, providing a decentralized Ethereum based protocol that allows users to safely exchange ERC-20 tokens, has reached $3 billion in total value locked. Launched just 2 years ago and growing at a neck-breaking rate, Uniswap has already surpassed 250,000 unique addresses and supported over $20B worth of trades. Several DeFi lending platforms - MakerDAO, Compound, Aave - enjoyed comparable success, having each locked north of $1B to date. </p>
+<p><strong>The need for a solution</strong> <br/> When one thinks about the values and beliefs behind blockchain technology, it’s evident that transparency and immutability go hand in hand for all dominant blockchains.</p>
+<p>Immutability, the original value proposition of blockchain technology, is still the leading benefit sought after by the public, when participating in any DeFi activities.</p>
+<p>Transparency, on the contrary, is not as cherished: if given the option, consumers choose to remain anonymous over revealing themselves and their wealth. </p>
+<p>Observing the issues in the DeFi space, a demand for anonymity is clear: BitMEX website visits in 2020 indicate a clear correlation between the desire to remain anonymous when proceeding with trading activities: after the Aug 14th 2020 announcement of mandatory KYC, website visits dropped 35% from 5.3 million visits in August 2020 to 3.4 million visits in October 2020, and hasn’t reached highs ever since. </p>
+<p>With today’s existing solutions, users must either experience friction or deal with centralised entities if they wish to remain less transparent and anonymous when participating in DeFi ventures.</p>
+<p><strong>Blank wallet fights both friction and centralisation.</strong> <br/>  Blank believes everyone should have rights to their privacy. Privacy shouldn’t be “opt-in”, rather it’s something you could occasionally “opt-out” on your free will.</p>
+<h2><a class="header" href="#what-is-blank" id="what-is-blank">What is Blank?</a></h2>
+<p>Blank is the most private, non-custodial Ethereum browser wallet.</p>
+<p>Blank uses smart contracts that allow users to hide the amounts and origins of cryptocurrency held, in a decentralized and frictionless manner. </p>
+<p>Each time you want to make a withdrawal, Blank will create a new wallet address for you with the amount of crypto that you requested, which originates from the smart contract where everyone’s funds are pooled.</p>
+<!--- Blank Wallet Preview --->
+<p>This is a preview of how the Blank wallet looks. While some of the buttons on this mockup bring you to new screens, this is just a showcase with very limited functionality.</p>
+<style>
+    .lds-dual-ring {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+    }
+    .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid black;
+        border-color: black transparent black transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+    }
+    @keyframes lds-dual-ring {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<div style="position: relative; display: flex; align-items: center; justify-content: center; width: 360px; height: 600px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0.75rem; overflow: hidden;">
+    <div class="lds-dual-ring" style="opacity: 0.1;"></div>
+    <iframe style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: none;" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVuKEhYNbfxfE4h5dXa6Cu4%2FWallet-Preview%3Fnode-id%3D1%253A257%26scaling%3Dmin-zoom%26hide-ui%3D1" allowfullscreen></iframe>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="problems-targeted/problems-targeted.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a rel="next" href="problems-targeted/problems-targeted.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -196,7 +196,9 @@
 <p>To make a <strong>deposit</strong>, the user generates a secret and sends the <a href="https://iden3-docs.readthedocs.io/en/latest/iden3_repos/research/publications/zkproof-standards-workshop-2/pedersen-hash/pedersen.html#pedersen-hash"><strong>Pedersen Hash</strong></a> of a nullifier and the secret, along with the funds to mix, to the smart contract. This is called a commitment and is accepted by the contract, along with the funds.</p>
 <p>A hash function is a <strong>one-way function</strong>, which means that the hash of a secret can be easily calculated, while it is near-impossible to calculate the secret from a given hash. This property is used to guarantee that only a user in possession of the secret to a given commitment can withdraw funds from the contract.</p>
 <p>In order to make a <strong>withdrawal</strong>, the user needs to provide proof that they possess a secret to an unspent commitment in the smart contract. <a href="https://consensys.net/blog/blockchain-development/introduction-to-zk-snarks/"><strong>zkSnark technology</strong></a> allows to do that, without revealing which deposit corresponds to the secret. In other words, zkSnarks allow users to prove that they own a deposit in the contract, without revealing the exact deposit they know the secret of. The withdrawing address can not be connected to the depositing address in any way.</p>
-<p>The so-called <strong>Anonymity Set</strong> shows how many deposits still await for a withdrawal. It is a measurement of anonymity, since the bigger the anonymity set is, the bigger is the scope of addresses that could theoretically be the depositing address for a withdrawing address.</p>
+<p>The so-called <strong>Anonymity Set</strong> shows how many deposits still await for a withdrawal. It is a measurement of anonymity, since the bigger the anonymity set is, the bigger is the scope of addresses that could theoretically be the depositing address for a withdrawing address.
+<br><br>
+<img src="sc_progress.png" alt="" /></p>
 <p>To further increase anonymity and privacy, several measures can be taken. In order to not allow for external viewers to make a connection between depositing addresses and withdrawing addresses, the withdrawal should not be done right after the deposit for example.</p>
 <p>Even though existing providers like tornado.cash offer user-friendly interfaces, the whole process can be very time consuming and too technically advanced for the average crypto user. This results in lower usage, a smaller Anonymity Set and in turn lower privacy. Users have to manage their notes, the creation and management of different addresses, and they have to take care of following best practices to preserve privacy, like when to withdraw and to use a different IP-address for each action.</p>
 <h2><a class="header" href="#33-how-is-blank-better" id="33-how-is-blank-better">3.3. How is Blank better?</a></h2>
@@ -207,7 +209,9 @@
 <p>Using proven and audited technology and best practices is the way to maximize security. The basic infrastructure on Blank is built by integrating already existing solutions and practices that have been proven over time.</p>
 <p>The encrypted seed phrase, along with other sensitive data like addresses, keys and account data, is securely saved in the browser’s local storage. No online app, website or provider can access any of that secured data - the user remains with total control over their wallet. To store and manage accounts, MetaMask’s <a href="https://github.com/MetaMask/KeyringController">Eth-Keyring library</a> used. We leverage audited and proven open source solutions to minimize the possibility of error.</p>
 <p>Along with keys and accounts, Tornado secrets need to be safely stored inside the browser extension’s storage. To keep a minimum surface of attack, all secrets needed for the zkSnarks are derived from the wallet’s seed phrase. This also means that the user only has to save the seed phrase to be able to import all wallet data, including the zkSnark secrets.</p>
-<p>The following graphic shows how hierarchical deterministic (HD) wallets are integrated into Blank and how Tornado secrets can also be derived from the HD wallet structure.</p>
+<p>The following graphic shows how hierarchical deterministic (HD) wallets are integrated into Blank and how Tornado secrets can also be derived from the HD wallet structure.
+<br><br></p>
+<p><img src="hd_keys.png" alt="" /></p>
 
                     </main>
 
@@ -246,6 +250,21 @@
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

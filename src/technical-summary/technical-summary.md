@@ -38,6 +38,8 @@ A hash function is a **one-way function**, which means that the hash of a secret
 In order to make a **withdrawal**, the user needs to provide proof that they possess a secret to an unspent commitment in the smart contract. [**zkSnark technology**](https://consensys.net/blog/blockchain-development/introduction-to-zk-snarks/) allows to do that, without revealing which deposit corresponds to the secret. In other words, zkSnarks allow users to prove that they own a deposit in the contract, without revealing the exact deposit they know the secret of. The withdrawing address can not be connected to the depositing address in any way.
 
 The so-called **Anonymity Set** shows how many deposits still await for a withdrawal. It is a measurement of anonymity, since the bigger the anonymity set is, the bigger is the scope of addresses that could theoretically be the depositing address for a withdrawing address.
+<br><br>
+![](sc_progress.png)
 
 To further increase anonymity and privacy, several measures can be taken. In order to not allow for external viewers to make a connection between depositing addresses and withdrawing addresses, the withdrawal should not be done right after the deposit for example.
 
@@ -60,3 +62,6 @@ The encrypted seed phrase, along with other sensitive data like addresses, keys 
 Along with keys and accounts, Tornado secrets need to be safely stored inside the browser extension’s storage. To keep a minimum surface of attack, all secrets needed for the zkSnarks are derived from the wallet’s seed phrase. This also means that the user only has to save the seed phrase to be able to import all wallet data, including the zkSnark secrets.
 
 The following graphic shows how hierarchical deterministic (HD) wallets are integrated into Blank and how Tornado secrets can also be derived from the HD wallet structure.
+<br><br>
+
+![](hd_keys.png)

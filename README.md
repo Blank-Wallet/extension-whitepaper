@@ -1,4 +1,10 @@
-# blank-whitepaper
+# Blank Whitepaper
+
+This is the Whitepaper of Blank (goblank.io). It is also hosted on Github Pages and can be checked out here:
+
+https://blank-wallet.github.io/extension-whitepaper/book/overview/overview.html
+
+# Build instructions
 
  1. install `rust` and `cargo`
  2. `cargo install mdbook`

@@ -6,7 +6,9 @@ Although there are many existing Ethereum wallets that offer non-custodial crypt
 
 Blank wallet has an advantage over existing competitors, since it offers features that the market hasn’t seen before: built-in privacy. With a clear added value, we expect users to be comfortable with paying minimal fees in exchange for their untouchable privacy.
 
-Initially, Blank Wallet will charge a 0.5% withdrawal fee for all transactions taken through the Blank pool. Our research shows this to be an optimal number, but it may increase or decrease based on user feedback.
+Initially, Blank Wallet will charge a 0.5% withdrawal fee for all transactions taken through the Blank privacy pool. Our research shows this to be an optimal number, but it may increase or decrease based on user feedback.
+
+Other features such as regular wallet usage without privacy are going to be free.
 
 ## 4.2. Growth Model
 

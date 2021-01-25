@@ -62,6 +62,6 @@ Below is a preview of how the Blank wallet looks. While some of the buttons on t
 <div style="position: relative; width: 360px; max-width: 100%; height: fit-content;">
     <div style="position: relative; display: flex; align-items: center; justify-content: center; height: 0; padding-top: calc(600 / 360 * 100%); border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0.75rem; overflow: hidden;">
         <div class="lds-dual-ring" style="opacity: 0.1;"></div>
-        <iframe style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: none;" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVuKEhYNbfxfE4h5dXa6Cu4%2FWallet-Preview%3Fnode-id%3D1%253A257%26scaling%3Dmin-zoom%26hide-ui%3D1" allowfullscreen></iframe>
+        <iframe style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: none;" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVuKEhYNbfxfE4h5dXa6Cu4%2FWallet-Preview%3Fnode-id%3D1%253A257%26scaling%3Dscale-down-width%26hide-ui%3D1" allowfullscreen></iframe>
     </div>
 </div>

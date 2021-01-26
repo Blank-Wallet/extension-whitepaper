@@ -4,14 +4,14 @@
 
 ### Q1 2021 - Blank V1
 - Web extension wallet with Tornado.Cash relayer → using existing Tornado.Cash infrastructure (0.1; 1; 10 and 100 ETH smart contracts with already pooled ETH) to deliver basic privacy functionality within a wallet.
-- Referral system → Tracking deposits of referred users and rewarding the referrer in BLNK tokens.
+- Proof-of-funds compliance key → choose who you provide your transparency to. Providing a compliance key of specific withdrawn addresses would reveal the origins of the deposit.
 - Public Security Audit → security measures before the release of V1 to ensure safety of funds held on Blank Wallet.
 
 ### Q2 2021 - Blank V2
 - ERC-20 Support → allowing any ERC-20 token deposits; promoting WBTC pool
 - Automatic deposits → funds deposited into any personal Blank Wallet address will automatically be sent into the main Blank pool.
 - One time address → each time withdrawing from the main Blank pool would automatically create a new address to withdraw into.
-- Proof-of-funds compliance key → choose who you provide your transparency to. Providing a compliance key of specific withdrawn addresses would reveal the origins of the deposit.
+- Referral system → Tracking deposits of referred users and rewarding the referrer in BLNK tokens.
 - Web 3 compatibility → connect to all DeFi applications.
 
 ### Q3 2021

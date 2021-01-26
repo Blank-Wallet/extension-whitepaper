@@ -12,9 +12,9 @@
 - Automatic deposits → funds deposited into any personal Blank Wallet address will automatically be sent into the main Blank pool.
 - One time address → each time withdrawing from the main Blank pool would automatically create a new address to withdraw into.
 - Referral system → Tracking deposits of referred users and rewarding the referrer in BLNK tokens.
-- Web 3 compatibility → connect to all DeFi applications.
 
 ### Q3 2021
+- Web 3 compatibility → connect to all DeFi applications.
 - Blank functionality integration to Metamask snaps PlugIn → while still in Alpha, a full release would allow existing MetaMask users to install additional plugins, such as Blank plugin, to get additional features on their existing MetaMask wallet.
 - Tor integration → The relayers, dApp sites or node providers could theoretically track users by the IP address the requests for deposit or withdrawal are coming from and thus connect depositing and withdrawing addresses. To mitigate this, Tor can be used, so the user’s IP cannot be tracked and changes with each action.
 

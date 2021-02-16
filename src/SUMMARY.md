@@ -12,6 +12,6 @@
 
 - [Risks and Mitigation](./risks-and-mitigation/risks-and-mitigation.md)
 
-- [BLNK Token](./blnk-token/blnk-token.md)
+- [BLANK Token](./BLANK-token/BLANK-token.md)
 
 - [Disclaimer](./disclaimer/disclaimer.md)

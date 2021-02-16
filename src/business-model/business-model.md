@@ -30,7 +30,7 @@ As we acknowledge the success of the aforementioned referral strategies, Blank w
     
 2.   The influencers and other selected affiliate partners will promote Blank on their platforms to spread awareness and refer their audience to join;
    
-3.   Affiliates will be compensated based on their performance: 30% of the fees paid by referred users will be transferred to the influencers in BLNK tokens as a reward.
+3.   Affiliates will be compensated based on their performance: 30% of the fees paid by referred users will be transferred to the influencers in BLANK tokens as a reward.
 
 ### 4.2.2. Influencer Marketing
 
@@ -46,7 +46,7 @@ Thus, by associating their personal brand with that of ours, influencers will be
 
 The Community Angels will be used to further spread the word about Blank across social media, forums, and discussion channels. 
 
-Angels will act as an extension of our team in the community and take on several responsibilities. For example, they will answer questions of Blank’s users on major forums, explain the new features or updates on their social media accounts or administer official Blank’s social media groups. As a compensation for their time and effort, Community Angels will receive BLNK tokens as a fixed fee. 
+Angels will act as an extension of our team in the community and take on several responsibilities. For example, they will answer questions of Blank’s users on major forums, explain the new features or updates on their social media accounts or administer official Blank’s social media groups. As a compensation for their time and effort, Community Angels will receive BLANK tokens as a fixed fee. 
 
 We are aware of the potential risks posed by such a program - lack of defined role, criteria of representatives and excessive behavior or spam. To prevent these risks with the Blank Community Angels, we will carefully monitor their activities to be in line with our values and run audits periodically to ensure all rules are adhered to. There will also be an opportunity to report any misuse of the Angel’s perks directly to us.
 

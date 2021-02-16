@@ -11,7 +11,7 @@
 - ERC-20 Support → allowing any ERC-20 token deposits; promoting WBTC pool
 - Automatic deposits → funds deposited into any personal Blank Wallet address will automatically be sent into the main Blank pool.
 - One time address → each time withdrawing from the main Blank pool would automatically create a new address to withdraw into.
-- Referral system → Tracking deposits of referred users and rewarding the referrer in BLNK tokens.
+- Referral system → Tracking deposits of referred users and rewarding the referrer in BLANK tokens.
 
 ### Q3 2021
 - Web 3 compatibility → connect to all DeFi applications.

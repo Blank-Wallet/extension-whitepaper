@@ -232,29 +232,29 @@
 <p>Blank aims to introduce ERC-20 pooling via smart contracts, allowing traders to become less visible. </p>
 <h1><a class="header" href="#3-technical-summary" id="3-technical-summary">3. Technical Summary</a></h1>
 <h2><a class="header" href="#31-roadmap" id="31-roadmap">3.1. Roadmap</a></h2>
-<h3><a class="header" href="#q1-2021---blank-v1" id="q1-2021---blank-v1">Q1 2021 - Blank V1</a></h3>
+<h3><a class="header" href="#q1-2021---blank-v1---early-access" id="q1-2021---blank-v1---early-access">Q1 2021 - Blank V1 - Early Access</a></h3>
 <ul>
-<li>Web extension wallet with Tornado.Cash relayer → using existing Tornado.Cash infrastructure (0.1; 1; 10 and 100 ETH smart contracts with already pooled ETH) to deliver basic privacy functionality within a wallet.</li>
+<li>Web extension wallet → using existing Tornado.Cash infrastructure (0.1; 1; 10 and 100 ETH smart contracts with already pooled ETH) to deliver basic privacy functionality within a wallet.</li>
 <li>Proof-of-funds compliance key → choose who you provide your transparency to. Providing a compliance key of specific withdrawn addresses would reveal the origins of the deposit.</li>
-<li>Public Security Audit → security measures before the release of V1 to ensure safety of funds held on Blank Wallet.</li>
 </ul>
 <h3><a class="header" href="#q2-2021---blank-v2" id="q2-2021---blank-v2">Q2 2021 - Blank V2</a></h3>
 <ul>
 <li>ERC-20 Support → allowing any ERC-20 token deposits; promoting WBTC pool</li>
-<li>Automatic deposits → funds deposited into any personal Blank Wallet address will automatically be sent into the main Blank pool.</li>
-<li>One time address → each time withdrawing from the main Blank pool would automatically create a new address to withdraw into.</li>
-<li>Referral system → Tracking deposits of referred users and rewarding the referrer in BLANK tokens.</li>
+<li>Web3 compatibility → connect to all DeFi applications.</li>
+<li>Public Security Audit → security measures before the release of V1 to ensure safety of funds held on Blank Wallet.</li>
 </ul>
 <h3><a class="header" href="#q3-2021" id="q3-2021">Q3 2021</a></h3>
 <ul>
-<li>Web 3 compatibility → connect to all DeFi applications.</li>
-<li>Blank functionality integration to Metamask snaps PlugIn → while still in Alpha, a full release would allow existing MetaMask users to install additional plugins, such as Blank plugin, to get additional features on their existing MetaMask wallet.</li>
+<li>Automatic deposits → funds deposited into any personal Blank Wallet address will automatically be sent into the main Blank pool.</li>
+<li>One time address → each time withdrawing from the main Blank pool would automatically create a new address to withdraw into.</li>
+<li>Referral system → Tracking deposits of referred users and rewarding the referrer in BLANK tokens.</li>
 <li>Tor integration → The relayers, dApp sites or node providers could theoretically track users by the IP address the requests for deposit or withdrawal are coming from and thus connect depositing and withdrawing addresses. To mitigate this, Tor can be used, so the user’s IP cannot be tracked and changes with each action.</li>
 </ul>
 <h3><a class="header" href="#q4-2021---blank-v3" id="q4-2021---blank-v3">Q4 2021 - Blank V3</a></h3>
 <ul>
 <li>Partial withdrawal → independent ETH pools, no longer based as Tornado.Cash relayers, instead of withdrawing the same amount deposited. </li>
 <li>Unique pool reward system → anyone can create reward milestones for pooling funds and providing privacy for others.</li>
+<li>Blank functionality integration to Metamask snaps PlugIn → while still in Alpha, a full release would allow existing MetaMask users to install additional plugins, such as Blank plugin, to get additional features on their existing MetaMask wallet.</li>
 </ul>
 <h2><a class="header" href="#32-how-does-it-work" id="32-how-does-it-work">3.2. How does it Work?</a></h2>
 <p>The Blank Wallet V1 functionality is based on Tornado Cash <a href="https://tornado-cash.medium.com/introducing-private-transactions-on-ethereum-now-42ee915babe0">private transactions</a>.</p>
@@ -414,21 +414,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -2,25 +2,25 @@
 
 ## 3.1. Roadmap
 
-### Q1 2021 - Blank V1
-- Web extension wallet with Tornado.Cash relayer → using existing Tornado.Cash infrastructure (0.1; 1; 10 and 100 ETH smart contracts with already pooled ETH) to deliver basic privacy functionality within a wallet.
+### Q1 2021 - Blank V1 - Early Access
+- Web extension wallet → using existing Tornado.Cash infrastructure (0.1; 1; 10 and 100 ETH smart contracts with already pooled ETH) to deliver basic privacy functionality within a wallet.
 - Proof-of-funds compliance key → choose who you provide your transparency to. Providing a compliance key of specific withdrawn addresses would reveal the origins of the deposit.
-- Public Security Audit → security measures before the release of V1 to ensure safety of funds held on Blank Wallet.
 
 ### Q2 2021 - Blank V2
 - ERC-20 Support → allowing any ERC-20 token deposits; promoting WBTC pool
+- Web3 compatibility → connect to all DeFi applications.
+- Public Security Audit → security measures before the release of V1 to ensure safety of funds held on Blank Wallet.
+
+### Q3 2021
 - Automatic deposits → funds deposited into any personal Blank Wallet address will automatically be sent into the main Blank pool.
 - One time address → each time withdrawing from the main Blank pool would automatically create a new address to withdraw into.
 - Referral system → Tracking deposits of referred users and rewarding the referrer in BLANK tokens.
-
-### Q3 2021
-- Web 3 compatibility → connect to all DeFi applications.
-- Blank functionality integration to Metamask snaps PlugIn → while still in Alpha, a full release would allow existing MetaMask users to install additional plugins, such as Blank plugin, to get additional features on their existing MetaMask wallet.
 - Tor integration → The relayers, dApp sites or node providers could theoretically track users by the IP address the requests for deposit or withdrawal are coming from and thus connect depositing and withdrawing addresses. To mitigate this, Tor can be used, so the user’s IP cannot be tracked and changes with each action.
 
 ### Q4 2021 - Blank V3
 - Partial withdrawal → independent ETH pools, no longer based as Tornado.Cash relayers, instead of withdrawing the same amount deposited. 
 - Unique pool reward system → anyone can create reward milestones for pooling funds and providing privacy for others.
+- Blank functionality integration to Metamask snaps PlugIn → while still in Alpha, a full release would allow existing MetaMask users to install additional plugins, such as Blank plugin, to get additional features on their existing MetaMask wallet.
 
 
 ## 3.2. How does it Work?

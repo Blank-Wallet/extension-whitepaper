@@ -8,7 +8,7 @@ Beyond that, we have built BLANK token so that it is deeply rooted within the pr
 
 ## 7.1. Fee Reduction for Token Holders
 
-As previously discussed, wallet users will be subject to a service fee. However, BLANK token holders will benefit from notable fee reductions. Such a fee reduction will be tier-based and will depend on the amount of tokens held: 
+As previously discussed, wallet users will be subject to a service fee when using certain privacy features. However, BLANK token holders will benefit from notable fee reductions. Such a fee reduction will be tier-based and will depend on the amount of tokens held: 
 1,000 tokens will equate to a 10% fee reduction;
 5,000 tokens - 15% fee reduction;
 10,000 - 25% fee reduction.

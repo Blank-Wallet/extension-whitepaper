@@ -17,7 +17,7 @@ As previously discussed, wallet users will be subject to a service fee when usin
 
 A third of fees collected from Blank wallet's smart contracts will be used on buying back the BLANK tokens from the market and burning it. As a result, the overall circulating token supply will be reduced. We believe that such a strategy will best position us for success long-term - as proved by similar buyback-and-burn programs from the likes of Binance or Bitfinex.
 
-## 7.3. Initially, ETH/BLANK Liquidity Providers earn 1/3 of the Fees 
+## 7.3. Initially, Liquidity Providers earn 1/3 of the Fees 
 
 Contributing your tokens to a DEX liquidity pool ensures that BLANK tokens are available to trade when needed. Thus, we want to reward users helping to address liquidity concerns on decentralised liquidity provision platforms. We will send a third of our fees to those staking the ETH/BLANK pair on Uniswap - this will be distributed proportionately to the amount pooled by the user.
 

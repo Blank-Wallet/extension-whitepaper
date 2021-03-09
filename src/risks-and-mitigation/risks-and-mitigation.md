@@ -29,7 +29,7 @@ While we have outlined these potential plans of attack based on differing market
 
 There were several projects that raised capital in 2017 and ended up facing roadmap execution issues. Namely, this occurred because the management continued to hold funds raised in the native form (ETH), which lost more than 90% of its value over the course of a year. 
 
-Although Blank Wallet aims to continue the same path and raise funds in ETH, there are strict measures we will take to combat problems of the past. Specifically, GoBlank OU will convert enough ETH to cover for 6 months of development costs. After that, the company will continue to liquidate ETH to ensure enough capital is available at any point in time to continue developing for 6 months. As a result, we aim to minimize stoppages and disturbances to our development and the overall project.
+Although Blank Wallet aims to continue the same path and raise funds in ETH, there are strict measures we will take to combat problems of the past. Specifically, Blank will convert enough ETH to cover for 6 months of development costs. After that, the company will continue to liquidate ETH to ensure enough capital is available at any point in time to continue developing for 6 months. As a result, we aim to minimize stoppages and disturbances to our development and the overall project.
 
 ## 6.4. Threats to frequent DeFi hacks
 

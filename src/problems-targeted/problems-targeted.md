@@ -4,19 +4,19 @@ Unlike Bitcoin’s UTXO structure which offers greater privacy, Ethereum is buil
 
 There are a few noteworthy problems on Ethereum:
 
-## 2.1. Hiding Your Wealth
+## 2.1. Wealth Privacy
 
 Holding wealth on centralised exchanges is never safe. Any literate investor would advise holding funds in a private wallet instead. By holding cryptocurrency in a private wallet, the user is still vulnerable to have himself or his wealth identified, if previous transactions were [analyzed](https://www.coindesk.com/coinbase-analytics-blockchain-analysis-crypto-government). Everyday transactions, such as sending payments to friends, become an excruciating task, as extreme effort is needed to preserve the privacy of wealth stored on chain. 
 
 Amongst the safest approaches is grouping wealth with other individuals, making it impossible to distinguish capital ownership. Ethereum’s smart contracts enable the possibility of grouping wealth in a trustless manner. Blank’s approach to this can be found in section 3.2.
 
-## 2.2. Hiding Origins of Your Wealth
+## 2.2. Origins Privacy
 
 Ethereum’s ecosystem provides many financial opportunities: gambling, selling personal NFTs, speculating with controversial tokens and many more. After conducting these operations, in some instances, the user may not want to disclose how he accrued his wealth if it's irrelevant. 
 
 Blank believes that unconnected parties shouldn’t know more about you than necessary. 
 
-## 2.3. Less Transparent Trading Activity (ETH, ERC-20)
+## 2.3. Trading Privacy (ETH, ERC-20)
 
 On August 8th 2020, many prominent figures on Twitter [shared an address](https://twitter.com/HsakaTrades/status/1292175410550038529) identified as “Zeus Capital”, with an onchain short position on Chainlink. In the following hours, there were many follow up tweets inviting traders to “go long on $link and do a short squeeze”, which resulted in a $17M short liquidation for the identified trader. 
 

@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Risks and Mitigation - Blank Whitepaper</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../overview/overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="../problems-targeted/problems-targeted.html"><strong aria-hidden="true">2.</strong> Problems Targeted</a></li><li class="chapter-item expanded "><a href="../technical-summary/technical-summary.html"><strong aria-hidden="true">3.</strong> Technical Summary</a></li><li class="chapter-item expanded "><a href="../business-model/business-model.html"><strong aria-hidden="true">4.</strong> Business Model</a></li><li class="chapter-item expanded "><a href="../market-overview/market-overview.html"><strong aria-hidden="true">5.</strong> Market Overview</a></li><li class="chapter-item expanded "><a href="../risks-and-mitigation/risks-and-mitigation.html" class="active"><strong aria-hidden="true">6.</strong> Risks and Mitigation</a></li><li class="chapter-item expanded "><a href="../BLANK-token/BLANK-token.html"><strong aria-hidden="true">7.</strong> BLANK Token</a></li><li class="chapter-item expanded "><a href="../disclaimer/disclaimer.html"><strong aria-hidden="true">8.</strong> Disclaimer</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Blank Whitepaper</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#6-risks-and-mitigation" id="6-risks-and-mitigation">6. Risks and Mitigation</a></h1>
+<p>As with any product, its success is dependent on many external factors. The team behind Blank wallet believes that by identifying possible upcoming risks, the success chances can be increased. There are several risks that we wanted to address - and how we intend to minimize them in response to varying market circumstances.</p>
+<h2><a class="header" href="#61-insufficient-capital-pooled-to-provide-privacy" id="61-insufficient-capital-pooled-to-provide-privacy">6.1. Insufficient Capital pooled to provide Privacy</a></h2>
+<p>The Blank v2 is expected to support ERC-20 deposits. Given that the privacy of Blank wallet highly correlates with the funds deposited and the usage of Blank functionality, it’s important that the initial liquidity is in place to offer basic anonymity for anyone starting to use Blank Wallet.</p>
+<p>Mainly, this is where we plan to allocate most of the raised funds. Pooled ETH will be used to convert into popular ERC-20 tokens such as WBTC, and will be placed into the main Blank smart contract to provide initial privacy.</p>
+<p>Lastly, the functionality introduced in v3 is planned to include pooling rewards - anyone will be able to create milestones, which upon being reached would reward all participating wallets.</p>
+<h2><a class="header" href="#62-high-gas-fees-due-to-zksnark-applications" id="62-high-gas-fees-due-to-zksnark-applications">6.2. High Gas fees due to zkSnark applications</a></h2>
+<p>Industry-wide events such as extreme volatility may cause Ethereum network to experience higher than usual gas fees, thus rendering Blank wallet to be expensive to use. </p>
+<p>Besides, additional features mentioned in the roadmap may be gas intensive to roll out and operate. In response to that, there are a few paths we are exploring, which also depend on the developmental stage in the wider market at the time of our v3 launch. </p>
+<p>Firstly, we expect that once Blank’s v3 functionality is rolled in Q4 of 2021, the issues of high gas fees should be solved (or partially solved) after the implementation of Ethereum 2.0. </p>
+<p>In case Ethereum 2.0 gets delayed or does not happen, we are considering alternatives to tackle this problem. For one, we are exploring second-layer solutions to implement additional features such as Omise-GO. Also, we are examining other ecosystems such as Polkadot after the v2 version on Ethereum is released.</p>
+<p>Our view remains that growing the core user base is one of the primary objectives after the launch, which plays directly into the greater privacy and security. For that, the supreme user-friendliness and hassle-free experience to onboard users will have to be ensured. Therefore, we will aim to choose the path which complicates our user acquisition strategy the least - by using platforms more widely accepted and preferred by the majority of the users. In other words, if the high gas issues end up impeding the usability of our platform, we will follow the user base to define our actions.</p>
+<p>While we have outlined these potential plans of attack based on differing market conditions, we will monitor the industry trends going forward to make an educated and justified decision. In making these crucial decisions, we intend to remain flexible. We want to remain mindful of the feedback from both our users and experts. Therefore, Blank’s team will consult with the community and report our decisions through blogs and social media channels. </p>
+<h2><a class="header" href="#63-market-volatility-for-assets-raised" id="63-market-volatility-for-assets-raised">6.3. Market Volatility for Assets raised</a></h2>
+<p>There were several projects that raised capital in 2017 and ended up facing roadmap execution issues. Namely, this occurred because the management continued to hold funds raised in the native form (ETH), which lost more than 90% of its value over the course of a year. </p>
+<p>Although Blank Wallet aims to continue the same path and raise funds in ETH, there are strict measures we will take to combat problems of the past. Specifically, Blank will convert enough ETH to cover for 6 months of development costs. After that, the company will continue to liquidate ETH to ensure enough capital is available at any point in time to continue developing for 6 months. As a result, we aim to minimize stoppages and disturbances to our development and the overall project.</p>
+<h2><a class="header" href="#64-threats-to-frequent-defi-hacks" id="64-threats-to-frequent-defi-hacks">6.4. Threats to frequent DeFi hacks</a></h2>
+<p>As outlined in the previous sections, we will deploy a major share of pooled funds in smart contracts to provide liquidity on the platform. Therefore, the prevention against DeFi hacks is equally relevant to Blank’s team (and investors) as it is to our users. </p>
+<p>It is widely known that the DeFi ecosystem has encountered its fair share of hacks. The various hacks stemmed from the Turing-complete code, which has so far made the system rather vulnerable. Blank’s team, dealing with such a delicate matter, sees hacking as a big issue in the Ethereum space.</p>
+<p>To limit these concerns, we will use industry-proven strategies that have been efficient in helping with transactional or payment-based platforms. For example, we will examine tested and industry-vetted open source projects, the code of which has been successfully used in preventing hacking risks.</p>
+<p>Besides, we will audit the code before releasing it to the public with at least 2 different independent auditors - and publish their reports before releasing the update for our users. </p>
+<p>Lastly, we will implement the bug bounty program, where users will be able to detect bugs for a reward. The bug bounties will be classified by severity in 4 types: from lowest (1) to highest (4). </p>
+<p>Thus, our hacking prevention will consist of 3 rather contrasting, but complementary mechanisms: tested technical solutions, the third party audits from the experts, and the participation of Blank’s user community.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../market-overview/market-overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../BLANK-token/BLANK-token.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../market-overview/market-overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../BLANK-token/BLANK-token.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
